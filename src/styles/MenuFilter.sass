@@ -1,0 +1,87 @@
+.menu-left-container 
+	max-width: 200px 
+	position: absolute 
+	margin: 1vw auto auto 1vw 
+	background-color: whitesmoke 
+	border: solid lightgrey 0.2vw 
+	border-radius: 2vw 
+	padding: 1vw 
+	form 
+		padding: 2vw auto 
+		font-size: 1vw 
+.form-wrapper 
+	display: grid 
+	grid-column: 1fr 
+	grid-row: 1fr 1fr 1fr 
+	grid-area: "form-parking form-parking form-parking" "form-building form-building form-building" "form-price form-price form-price"
+hr 
+	width: 80% 
+	margin: 2vw auto 2vw auto 
+	text-align: left 
+.form-parking 
+	padding: 1vw 
+	display: flex 
+	justify-content: space-between 
+	color: rgb(74, 73, 73) 
+	font-size: 1em 
+	background-color: lightgrey 
+	border-radius: 1vw 
+	grid-area: form-parking 
+button 
+	max-width: 10vw 
+	margin: 0.3vw 
+	display: flex 
+	justify-content: space-around center 
+	align-items: center 
+	border: 1vw 
+	border: black 
+	border-radius: 1vw 
+	background-color: lightgray 
+	cursor: pointer 
+	font-size: 0.8em 
+	&:hover 
+		background-color: rgb(187, 89, 199) 
+.form-building-buttons 
+	display: flex 
+	flex-wrap: wrap !important 
+	justify-content: center 
+	grid-area: form-building 
+.btn-img 
+	width: 40% 
+	display: flex 
+	justify-content: space-between 
+	align-items: center 
+.hovered 
+	background-color: rgb(223, 150, 232) 
+	box-shadow: 0.2em 0.2em 0.2em rgb(240, 240, 240) inset 
+	color: black 
+	font-weight: bold 
+.unhovered 
+	background-color: rgb(169, 156, 171) 
+	box-shadow: 0.2em 0.2em 0.2em rgb(74, 73, 73) 
+	color: white 
+	font-weight: bold 
+.form-price 
+	display: flex 
+	flex-direction: column 
+	justify-content: left space-between 
+	align-items: center 
+	grid-area: form-price 
+input[type=range] 
+	background-color: #0C8288 
+	cursor: pointer 
+.menu-lang 
+	position: absolute 
+	max-width: 200px 
+	top: 1vw 
+	right: 1vw 
+	left: 86vw 
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	background-color: whitesmoke 
+	border: solid lightgrey 0.2vw 
+	border-radius: 2vw 
+	padding: 1vw 
+	font-weight: bolder 
+	font-size: 0.8em 

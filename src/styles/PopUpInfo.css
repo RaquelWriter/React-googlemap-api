@@ -1,0 +1,9 @@
+.container-popupinfo {
+  position: absolute;
+  margin: 2vw auto auto 2vw;
+  max-width: 300px;
+  background-color: red;
+  border-radius: 2vw;
+  padding: 1vw;
+  display: block;
+}
