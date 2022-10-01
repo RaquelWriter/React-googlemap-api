@@ -1,6 +1,6 @@
-# [NOMOKO - Map Test - Raquel Sánchez Ventero]
+# NOMOKO - Map Test - Raquel Sánchez Ventero
 
-(https://www.linkedin.com/in/raquelsanchezventero/) [![Linkedin]
+(https://www.linkedin.com/in/raquelsanchezventero/)
 
 
 Creating a Google Map using MAP API with REACT, WEBPACK, NODEJS and SASS.
