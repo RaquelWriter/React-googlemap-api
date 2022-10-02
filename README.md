@@ -59,6 +59,6 @@ I've never rendered a google map like this before. So, for me, it's the first ti
 
 ## NEXT STEPS
 
-The code could be separated into small components to make it more readable, for example. And more improves.
+The code could be separated into small components to make it more readable, for example. And more improves, like clustering markers in the same exact location: https://developers.google.com/maps/documentation/javascript/marker-clustering
 But as a **Minimum Viable Product, I think the work is done.**
 I hope you can take my test as a proficient Jr. FrontEnd developer, who can learn very quickly.
