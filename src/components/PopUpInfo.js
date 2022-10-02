@@ -6,13 +6,15 @@ import { LocalizationContext, languages } from './LocalizationContext';
 function PopUpInfo({ openInfoWindowId, center, buildingtypeInfoWindow, hasParkingInfoWindow, priceInfoWindow }){
   
   const { lang } = useContext(LocalizationContext);
-  
+  const typeOfPropertyTranslated = ('menu-bt-' + JSON.stringify(buildingtypeInfoWindow)).replace(/['"]+/g, '');
+  console.log(typeOfPropertyTranslated);
   return(
     <div className='container-popupinfo'>
       <h3>{languages[lang]['infowindow-title']}</h3>
       <img src={houseIMG} alt='House' width='200px'/>
       <h2>{languages[lang]['infowindow-propID']} #{JSON.stringify(openInfoWindowId)}</h2>
-      <h2>{languages[lang]['infowindow-typeofproperty']} {JSON.stringify(buildingtypeInfoWindow)}</h2>
+      
+      <h2>{languages[lang]['infowindow-typeofproperty']}: {languages[lang][typeOfPropertyTranslated]}</h2>
       
       {hasParkingInfoWindow !== 'x'? 
         <h2>{languages[lang]['infowindow-parking']}: {languages[lang].No}</h2>
