@@ -8,7 +8,7 @@ Localized in english and german. Clickable custom markers with filtered data.
 
 ## INSTRUCTIONS
 
-Download the zip and unzip. Open the folder in Visual Code Studio.
+Download the zip and unzip. Open the folder in Visual Code Studio or your preferred code editor.
 For installing the node modules, open the Terminal and type: npm install.
 Then type npm start.
 
