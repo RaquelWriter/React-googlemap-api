@@ -22,7 +22,7 @@ function MenuFilter() {
       setWithParking('x')
       : setWithParking('')
     );
-  }
+  };
   /* FORM STATE - FILTERING typeOfBuilding */
   const arrTypeOfBuilding=
     {'Residential': true,
@@ -35,8 +35,6 @@ function MenuFilter() {
   const handleChangeTypeOfBuilding = (event) => {
     const selectedType = event.target.value;
     const boolPrevious = typeOfBuilding[selectedType];
-    console.log('PRIMER' + JSON.stringify(typeOfBuilding));
-    console.log('DATO ' + typeOfBuilding[selectedType]);
     return(
       setTypeOfBuilding(prevState => ({
         ...prevState, 
@@ -46,19 +44,19 @@ function MenuFilter() {
           )
       }))
     );
-  }
+  };
 
   /* FORM STATE - FILTERING PRICE RANGE */
   // MINIMUM
   const [minRange, setMinRange] = useState(0)
   const handleChangeMinPriceRange = (e) => {
     setMinRange(e.target.value)
-  }
+  };
   //MAXIMUM
   const [maxRange, setMaxRange] = useState(0)
   const handleChangeMaxPriceRange = (e) => {
     setMaxRange(e.target.value)
-  }
+  };
 
   // CHANGE THE CLASS of BUTTONS
   // For hover, unhover in CSS
@@ -70,8 +68,8 @@ function MenuFilter() {
         ('hovered')
         :
         ('unhovered')
-    )
-  }
+    );
+  };
 
   return(
     <>
@@ -91,7 +89,6 @@ function MenuFilter() {
       <button type='button' onClick={() => {handleChangeLang(1)}}>DEUTSCH</button>
     </div>
     
-
     {/* MENU RENDER */}
     <div className='menu-left-container'>
       <h2>{languages[lang]['menu-title']}</h2>
