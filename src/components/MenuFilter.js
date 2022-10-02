@@ -48,7 +48,7 @@ function MenuFilter() {
 
   /* FORM STATE - FILTERING PRICE RANGE */
   // MINIMUM
-  const [minRange, setMinRange] = useState(0)
+  const [minRange, setMinRange] = useState(500)
   const handleChangeMinPriceRange = (e) => {
     setMinRange(e.target.value)
   };
