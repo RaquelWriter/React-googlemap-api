@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/App.sass';
+import '../styles/Map.sass';
 import dataProperties from '../docs/properties.json';
 import { GoogleMap, Marker, InfoWindow, InfoBox} from "@react-google-maps/api";
 import mapStyles from '../styles/MapStyles.js';
@@ -14,22 +14,20 @@ export default function Map({ minRange, maxRange, typeOfBuilding, withparking })
     lng: 8.5482374
   });
 
-  //* HANDLE - handleClickOnMarker - SET CENTER TO THE MARKER *//
-  //* and OPEN a InfoWindow with ID and data *//
+  //* STATES & HANDLE - handleClickOnMarker - SET CENTER TO THE MARKER *//
+  //* and OPEN an InfoWindow with ID and data *//
   const [openInfoWindowId, setOpenInfoWindowId] = useState(-1);
   const [buildingtypeInfoWindow, setBuildingtypeInfoWindow] = useState('');
   const [hasParkingInfoWindow, sethasParkingInfoWindow] = useState('');
   const [priceInfoWindow, setpriceInfoWindow] = useState('');
   const [infoWindowOpen, setInfoWindowOpen] = useState(false);
   function handleClickOnMarker (coor, ID, buildingtype, parking, price) {
-    console.log('1 openInfoWindowId inside handleClickOnMarker ' + ID);
     setOpenInfoWindowId(ID);
     sethasParkingInfoWindow(parking);
     setpriceInfoWindow(price);
     setBuildingtypeInfoWindow(buildingtype);
     setCenter(coor);
     setInfoWindowOpen(true);
-    console.log('2 openInfoWindowId inside handleClickOnMarker ' + ID);
   };
   
   /* MARKERS RENDERING with FILTERS*/
@@ -39,10 +37,10 @@ export default function Map({ minRange, maxRange, typeOfBuilding, withparking })
         (item) => withparking === 'x' ? item.Parking === withparking  : item === item // Filter only with Parking
         
         ).filter((item) => 
-          typeOfBuilding[item.BuildingType.replace(' ', '')] === true //Filter TypeOfBuiding remove spaces
+          typeOfBuilding[item.BuildingType.replace(' ', '')] === true //Filter TypeOfBuiding removes spaces
 
         ).filter((item) =>
-          item['Price/m^2'] < maxRange && item['Price/m^2'] > minRange
+          item['Price/m^2'] < maxRange && item['Price/m^2'] > minRange // Filter by price range
           
         ).map((item, id) => {                
                 const latitude = Number(item.Coordinates.slice(6, -1).split(" ")[0]);
@@ -61,7 +59,7 @@ export default function Map({ minRange, maxRange, typeOfBuilding, withparking })
                     icon = {{url: require('../images/' + iconImage + '.png'), scaledSize: {width: 40, height: 40}}}
                   >
                     <InfoBox
-                      options={{ pixelOffset: new window.google.maps.Size(-50, -60) }}
+                      options={{ pixelOffset: new window.google.maps.Size(-50, -60), closeBoxURL: '' }}
                       position={{lat: latitude, lng: longitude}}
                     >
                       <div style={{ backgroundColor: '#0C8288', width: 100, opacity: 0.75, padding: 3, borderRadius: 5,}}>
@@ -98,8 +96,8 @@ export default function Map({ minRange, maxRange, typeOfBuilding, withparking })
                   </div>
                 );
                 })
-    )
-  }
+            )
+  };
 
   /* END MARKS RENDERING */
 
@@ -150,7 +148,7 @@ export default function Map({ minRange, maxRange, typeOfBuilding, withparking })
           position={center}
           onCloseClick={() => setInfoWindowOpen(false)}
           options={{ pixelOffset: new window.google.maps.Size(0, -40) }}
-        >
+          >
           
           <PopUpInfo
             priceInfoWindow={priceInfoWindow}
@@ -166,4 +164,4 @@ export default function Map({ minRange, maxRange, typeOfBuilding, withparking })
 
       </GoogleMap>
   );
-}
+};
