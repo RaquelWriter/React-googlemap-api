@@ -4,7 +4,7 @@
 
 
 Creating a Google Map using MAP API with REACT, WEBPACK, NODEJS, and SASS.
-Localized in english and german. Clickable custom markers with filtering data.
+Localized in english and german. Clickable custom markers with filtered data.
 
 ## INSTRUCTIONS
 
