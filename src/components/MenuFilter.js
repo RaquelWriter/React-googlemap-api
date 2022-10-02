@@ -53,7 +53,7 @@ function MenuFilter() {
     setMinRange(e.target.value)
   };
   //MAXIMUM
-  const [maxRange, setMaxRange] = useState(0)
+  const [maxRange, setMaxRange] = useState(5000)
   const handleChangeMaxPriceRange = (e) => {
     setMaxRange(e.target.value)
   };
@@ -140,7 +140,7 @@ function MenuFilter() {
             <label forhtml='price-range-min'>{languages[lang]['menu-minimum']} - {minRange} €/m2</label>
             <input type='range' id='price-range-min' name='price-range-min' min='500' max='5000' onChange={(e) => handleChangeMinPriceRange(e)}></input>
             <label forhtml='price-range-max'>{languages[lang]['menu-maximum']} - {maxRange} €/m2</label>
-            <input type='range' id='price-range-max' name='price-range-max' min='500' max='5000' onChange={(e) => handleChangeMaxPriceRange(e)}></input>
+            <input type='range' id='price-range-max' name='price-range-max' min='500' max='5000' onChange={(e) => handleChangeMaxPriceRange(e)} defaultValue='5000'></input>
           
           </div>
 
