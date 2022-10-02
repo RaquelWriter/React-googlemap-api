@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
 export const languages = 
 [
@@ -36,8 +36,8 @@ export const languages =
     "menu-bt-Mixeduse": "Gemischte Benutzung",
     "infowindow-title": "GRUNDINFORMATION",
     "infowindow-propID": "Eigenschafts-ID",
-    "infowindow-typeofproperty": "Type of Property",
-    "infowindow-parking": "Art des Vermögens",
+    "infowindow-typeofproperty": "Art des Vermögens",
+    "infowindow-parking": "Parken",
     "No": "Nein",
     "Yes": "Ja",
     "Price": "Preis"
