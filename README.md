@@ -51,11 +51,11 @@ export const LocalizationContext = createContext(
 
 ### STYLES
 
-**SASS** As I am not very experienced with SASS, I created the CSS, and then they were converted to SASS, fixing some differences by hand.
+**SASS** -> As I am not very experienced with SASS, I created the CSS, and then they were converted to SASS, fixing some differences by hand.
 
 ## CHALLENGES - GOOGLE MAP
 
-I never rendered a google map like this before. So, for me, it's the first time. It took me two days to understand fully the concept of the Google Map itself. The most difficult part was to beautify all the things together. For example, Google Maps doesn't let you disable clicking on the Landmarks. Of course, there are some modules over there, but for the test, I was thinking you prefer to watch my coding.
+I've never rendered a google map like this before. So, for me, it's the first time. It took me two days to understand fully the concept of the Google Map itself. The most difficult part was to beautify all the things together. For example, Google Maps doesn't let you disable clicking on the Landmarks. Of course, there are some modules over there, but for the test, I was thinking you prefer to watch my coding.
 
 ## NEXT STEPS
 
