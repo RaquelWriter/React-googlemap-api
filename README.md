@@ -23,7 +23,7 @@ The filtering is mostly using map and filter methods.
 * **Map:** I took a new CSS for the map from snazzymaps.com. The map re-centers itself when a marker is clicked.
 After much testing, I opted for using the Google API Infobox for the price labels, instead of installing third-party modules. I was thinking to use SVG, as I can render them with a background color, but I am not sure if they are reliable in all devices.
 * **Comments:** The comments and the variables I used are both in English. All the code is fully commented on.
-* **Vulnarabilities: ** About the 6 vulnerabilities showed by npm when installing, they can be ignored. More info: https://stackoverflow.com/questions/72489256/6-high-severity-vulnerabilities-in-react-icons-4-4-0
+* **Vulnarabilities:** About the 6 vulnerabilities showed by npm when installing, they can be ignored. More info: https://stackoverflow.com/questions/72489256/6-high-severity-vulnerabilities-in-react-icons-4-4-0
 
 ## FILES AND COMPONENTS
 
