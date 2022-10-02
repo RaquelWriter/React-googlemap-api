@@ -6,6 +6,14 @@
 Creating a Google Map using MAP API with REACT, WEBPACK, NODEJS, and SASS.
 Localized in english and german. Clickable custom markers with filtering data.
 
+## INSTRUCTIONS
+
+Download the zip and unzip. Open the folder in Visual Code Studio.
+For installing the node modules, open the Terminal and type: npm install.
+Then type npm start.
+
+## CONSIDERATIONS
+
 * **FLOW:** LocalizationContext -> App -> MenuFilter -> Map -> GoogleMap -> Marks / InfoBox / InfoWindow
 * **Localization:** I opted for using the last React Context, with useContext Hook. The language is stored locally in JSON format in components/LocalizationContext.js. The language is selected in the MenuFilter component.
 * **Loading the map:** I registered a new Google API of my own for the map. For testing purposes, it's not protected,
