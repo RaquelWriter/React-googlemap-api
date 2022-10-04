@@ -14,7 +14,7 @@ Then type npm start.
 
 ## CONSIDERATIONS
 
-* **FLOW:** LocalizationContext -> App -> MenuFilter -> Map -> GoogleMap -> Marks / InfoBox / InfoWindow
+* **FLOW:**  App -> LocalizationContext -> MenuFilter -> Map -> GoogleMap -> Marks / InfoBox / InfoWindow
 * **Localization:** I opted for using the last React Context, with useContext Hook. The language is stored locally in JSON format in components/LocalizationContext.js. The language is selected in the MenuFilter component.
 * **Loading the map:** I registered a new Google API of my own for the map. For testing purposes, it's not protected,
 so please take care of it.
