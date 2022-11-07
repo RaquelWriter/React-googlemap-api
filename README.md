@@ -1,4 +1,4 @@
-# NOMOKO - Map Test - Raquel Sánchez Ventero
+# React app to show and filter directions in a Google Map - Raquel Sánchez Ventero
 
 (https://www.linkedin.com/in/raquelsanchezventero/)
 
@@ -51,14 +51,6 @@ export const LocalizationContext = createContext(
 
 ### STYLES
 
-**SASS** -> As I am not very experienced with SASS, I created the CSS, and then they were converted to SASS, fixing some differences by hand.
+**SASS** -> The stylesheest are in SASS format.
 
-## CHALLENGES - GOOGLE MAP
 
-I've never rendered a google map like this before. So, for me, it's the first time. It took me two days to understand fully the concept of the Google Map itself. The most difficult part was to beautify all the things together. For example, Google Maps doesn't let you disable clicking on the Landmarks. Of course, there are some modules over there, but for the test, I was thinking you prefer to watch my coding.
-
-## NEXT STEPS
-
-The code could be separated into small components to make it more readable, for example. And more improves, like managing markers in the same exact location.
-But as a **Minimum Viable Product, I think the work is done.**
-I hope you can take my test as a proficient Jr. FrontEnd developer, who can learn very quickly.
