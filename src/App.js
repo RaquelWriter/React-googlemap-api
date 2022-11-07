@@ -10,7 +10,7 @@ function App(){
 
   // LOADING THE GOOGLE API KEY
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyC-JRAfve-KKAO06Fg1fy3j1t95WZu2K_A',
+    googleMapsApiKey: 'AIzaSyBX1z5nvjcjzyxSMT-QCVS3ERu6Y3iNSb0',
   });
   if (!isLoaded) return <div>Loading...</div>
     return (
